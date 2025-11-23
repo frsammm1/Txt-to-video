@@ -1,0 +1,10 @@
+pyrogram==2.0.106
+tgcrypto
+aiohttp
+beautifulsoup4
+yt-dlp
+motor
+hachoir
+pillow
+ffmpeg-python
+python-dotenv
