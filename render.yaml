@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: tele-extractor-bot
+    env: docker
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python main.py
+    envVars:
+      - key: PORT
+        value: 8080
+      - key: API_ID
+        value: 123456
+      - key: API_HASH
+        value: your_api_hash
+      - key: BOT_TOKEN
+        value: your_bot_token
+      - key: MONGO_URI
+        value: mongodb+srv://...
+      - key: ADMIN_ID
+        value: 123456789
